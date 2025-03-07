@@ -1,0 +1,18 @@
+:root {
+  font-family:
+    var(--font-family-body), system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.heading-font {
+  font-family: var(--font-family-heading);
+}
+
+.body-font {
+  font-family: var(--font-family-body);
+}

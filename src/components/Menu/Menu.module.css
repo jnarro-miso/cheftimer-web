@@ -1,0 +1,32 @@
+.menu {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--tertiary-color);
+}
+
+.logoContainer {
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 190px;
+}
+
+.actions {
+  padding: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 36px;
+}
+
+.username {
+  font-size: 0.875rem;
+  font-weight: 500;
+}

@@ -1,0 +1,14 @@
+:root {
+  /* Color palette */
+  --primary-color: #007ffe;
+  --secondary-color: #e0e8f0;
+  --tertiary-color: #bedcb2;
+  --accent-color: #fe7f00;
+
+  --text-color: #252525;
+  --helper-text-color: #585858;
+
+  /* Typography */
+  --font-family-body: "Roboto Variable", sans-serif;
+  --font-family-heading: "Bubblegum Sans", sans-serif;
+}
