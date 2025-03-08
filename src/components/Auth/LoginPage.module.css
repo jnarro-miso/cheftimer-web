@@ -1,0 +1,27 @@
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 92px 0 24px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.buttonWrapper {
+  margin-top: 16px;
+}
+
+.createAccount {
+  font-size: 0.75rem;
+  margin-top: 60px;
+}

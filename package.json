@@ -10,10 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@fontsource-variable/material-symbols-rounded": "^5.2.5",
     "@fontsource-variable/roboto": "^5.2.5",
     "@fontsource/bubblegum-sans": "^5.2.5",
     "@material/web": "^2.2.0",
+    "@mui/icons-material": "^6.4.7",
+    "@mui/material": "^6.4.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

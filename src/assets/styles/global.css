@@ -1,4 +1,5 @@
 :root {
+  height: 100%;
   font-family:
     var(--font-family-body), system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: var(--text-color);
@@ -8,10 +9,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  /* Personalización de Material Design */
   --md-sys-color-primary: var(--primary-color);
   --md-sys-color-secondary: var(--secondary-color);
   --md-ref-typeface-brand: var(--font-family-body);
   --md-ref-typeface-plain: var(--font-family-body);
+}
+
+#root,
+body {
+  height: inherit;
 }
 
 .heading-font {
