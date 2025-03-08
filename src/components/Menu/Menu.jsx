@@ -1,5 +1,6 @@
 import chefLogo from "../../assets/images/logo.svg";
 import styles from "./Menu.module.css";
+import "@material/web/button/text-button.js";
 
 export default function Menu() {
   return (
@@ -9,7 +10,7 @@ export default function Menu() {
       </div>
       <div className={styles.actions}>
         <p className={styles.username}>Juan Pérez</p>
-        <button className={styles.button}>Cerrar sesión</button>
+        <md-text-button>Cerrar sesión</md-text-button>
       </div>
     </div>
   );
