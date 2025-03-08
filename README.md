@@ -26,13 +26,19 @@ Antes de comenzar, asegúrate de tener instalado:
 cheftimer-web/
 ├── public/              # Archivos estáticos
 ├── src/
+│   ├── assets/          # Archivos estáticos
+│   │   ├── images/      # Imágenes utilizadas en el proyecto
+│   │   └── styles/      # Estilos CSS globales
 │   ├── components/      # Componentes de React
 │   │   ├── Auth/        # Componentes de autenticación
-│   │   ├── Layout/      # Componentes de estructura
-│   │   ├── Menu/        # Componentes del menú
-│   │   ├── Navbar/      # Barra de navegación
+│   │   ├── Card/        # Componente de tarjeta
+│   │   ├── History/     # Historial de alarmas
 │   │   ├── Home/        # Página principal
-│   │   └── History/     # Historial de alarmas
+│   │   ├── Layout/      # Componentes de estructura
+│   │   ├── Link/        # Componente de enlace
+│   │   ├── Logo/        # Componente de logo
+│   │   ├── Menu/        # Componente de menú
+│   │   └── Navbar/      # Barra de navegación
 │   ├── App.jsx          # Componente principal
 │   ├── App.module.css   # Estilos CSS modulares
 │   └── main.jsx         # Punto de entrada
