@@ -47,6 +47,10 @@ export default function Navbar({ onNavigate }) {
         sx={{
           flexShrink: 0,
           height: "100%",
+          width: "270px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
           "& .MuiDrawer-paper": {
             width: "250px",
             position: "relative",
@@ -56,6 +60,9 @@ export default function Navbar({ onNavigate }) {
           },
           "& .MuiButtonBase-root": {
             borderRadius: "100px",
+            "&:active, &:focus": {
+              backgroundColor: "#E3EBF3",
+            },
           },
           "& .MuiListItemText-primary": {
             color: "#42484C",
@@ -81,13 +88,11 @@ export default function Navbar({ onNavigate }) {
               paddingLeft: "16px",
             }}
           />
-          {mainItems.map((item) => (
+          {mainItems.map((item, index) => (
             <ListItem key={item.text} disablePadding>
               <ListItemButton
-                onClick={(e) => {
-                  console.log("Clicked", item.page);
-                  onNavigate(item.page);
-                }}
+                onClick={() => onNavigate(item.page)}
+                autoFocus={index === 0}
               >
                 <ListItemIcon
                   sx={{

@@ -14,6 +14,7 @@
   --md-sys-color-secondary: var(--secondary-color);
   --md-ref-typeface-brand: var(--font-family-body);
   --md-ref-typeface-plain: var(--font-family-body);
+  --md-filter-chip-selected-container-color: var(--secondary-color);
 }
 
 #root,
