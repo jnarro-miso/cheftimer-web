@@ -1,0 +1,63 @@
+.container {
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.message h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.message p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.cardContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.cardContainer h2 {
+  white-space: pre-line;
+}
+
+.cardContainer p {
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.alarms {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.alarms h3 {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.alarmDetails {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--helper-text-color);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

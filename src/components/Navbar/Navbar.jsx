@@ -12,15 +12,17 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 
-export default function Navbar() {
+export default function Navbar({ onNavigate }) {
   const mainItems = [
     {
       icon: <AccessTimeOutlinedIcon />,
       text: "Vista de alarmas",
+      page: "home",
     },
     {
       icon: <TodayOutlinedIcon />,
       text: "Historial",
+      page: "history",
     },
   ];
 
@@ -81,7 +83,12 @@ export default function Navbar() {
           />
           {mainItems.map((item) => (
             <ListItem key={item.text} disablePadding>
-              <ListItemButton>
+              <ListItemButton
+                onClick={(e) => {
+                  console.log("Clicked", item.page);
+                  onNavigate(item.page);
+                }}
+              >
                 <ListItemIcon
                   sx={{
                     minWidth: "36px",
