@@ -4,7 +4,11 @@ import styles from "./LoginPage.module.css";
 import Logo from "../../components/Logo/Logo";
 import Link from "../../components/Link/Link";
 
-export default function LoginPage({ onLogin }) {
+export default function LoginPage({
+  onLogin,
+  onCreateAccount,
+  onForgotPassword,
+}) {
   const handleSubmit = (e) => {
     e.preventDefault();
     onLogin();
@@ -18,13 +22,16 @@ export default function LoginPage({ onLogin }) {
       <form className={styles.form} onSubmit={handleSubmit}>
         <md-outlined-text-field label="Email"></md-outlined-text-field>
         <md-outlined-text-field label="Contraseña"></md-outlined-text-field>
-        <Link>¿Olvidaste tu contraseña?</Link>
+        <Link onClick={() => onForgotPassword()}>
+          ¿Olvidaste tu contraseña?
+        </Link>
 
         <div className={styles.buttonWrapper}>
           <md-filled-button type="submit">Iniciar sesión</md-filled-button>
         </div>
         <p className={styles.createAccount}>
-          ¿No tienes cuenta? <Link>Crea una</Link>
+          ¿No tienes cuenta?{" "}
+          <Link onClick={() => onCreateAccount()}>Crea una</Link>
         </p>
       </form>
     </div>
